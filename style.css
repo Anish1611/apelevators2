@@ -1,0 +1,367 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: #748DA6;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+    display: flex;
+
+}
+#logo a {
+    color: rgb(174, 219, 206);
+    font-size: 35px;
+    font-weight: 600;
+    display: flex;
+    text-decoration: none;
+}
+
+#logo a span {
+    color: rgb(236, 179, 144);
+    transition: all 0.3s ease;
+}
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: BLACK;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 7000px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('images/bg2.jpg') no-repeat center center/cover;
+    height: 625px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+/*utility classes*/
+
+.h-primary{
+  font-size: 2.8rem;
+  padding: 12px;
+}
+.h-secondary{
+  font-size: 1.8rem;
+  padding: 12px;
+  text-decoration: underline;
+}
+.primary{
+color: black;
+text-align: center;
+text-decoration: underline;
+margin-top: 40px;
+margin-bottom: 30px;
+}
+.text5{
+  text-align: left;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+.hello{
+  font-size: 1.2rem
+}
+.btn{
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: #748DA6;
+  color: white;
+  margin: 27px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#home h1{
+    color:white;
+    font-size: 3.4rem;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#home h3{
+    color:black;
+    text-align: center;
+
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+
+}
+/*service section*/
+#services{
+    margin: 34px;
+    display: flex;
+    color: black;
+}
+#services .box{
+    border: 2px solid  black;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #748DA6;
+    margin-bottom: 20px;
+}
+
+#services .box img{
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+/*About Section*/
+#about{
+  display: flex;
+  text-align: center;
+}
+.title{
+  margin: 60px auto;
+  text-decoration: underline;
+}
+.para{
+  font-size: 22px;
+  font-style: italic;
+}
+#approach{
+  margin-top: 15px;
+  text-align: left;
+}
+#Vision{
+    text-align: left;
+      margin-top: 15px;
+}
+#features{
+    text-align: left;
+      margin-top: 15px;
+}
+  #amc{
+    text-align: left;
+      margin-top: 15px;
+  }
+/*products section*/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: arial;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+#products{
+
+  background-color: rgb(116, 141, 166);
+}
+/*contact section*/
+.h4{
+  text-align: left;
+}
+/* contact section styling */
+.contact {
+    color: #fff;
+    background: #111;
+
+
+.contact .title::before,
+.teams .title::before {
+    background: #fff;
+}
+
+.contact .title::after {
+    background: #111;
+    content: "get in touch";
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 40px);
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    font-size: 25px;
+    color: #003566;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+    color: #003566;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus {
+    border-color: #b3b3b3;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button-area {
+    display: flex;
+    align-items: center;
+}
+
+.right form .button-area button {
+    color: #fff;
+    display: block;
+    width: 160px !important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: #003566;
+    border: 2px solid #003566;
+    transition: all 0.3s ease;
+}
+
+.right form .button-area button:hover {
+    color: #003566;
+    background: none;
+}
+.yes{
+  margin-top:20px;
+}
+/* enquiry Section */
+#enquiry{
+  background: url(images/enq.jpg);
+}
